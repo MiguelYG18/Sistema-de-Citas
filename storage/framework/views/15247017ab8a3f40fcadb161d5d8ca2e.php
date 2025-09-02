@@ -28,9 +28,9 @@ foreach ($attributes->all() as $__key => $__value) {
 
 unset($__defined_vars); ?>
 
-<?php $__currentLoopData = $__laravel_slots; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-    <?php if (! (in_array($key, $except))): ?>
+<!--[if BLOCK]><![endif]--><?php $__currentLoopData = $__laravel_slots; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+    <!--[if BLOCK]><![endif]--><?php if (! (in_array($key, $except))): ?>
         <?php $__env->slot($key, $value); ?>
-    <?php endif; ?>
-<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+    <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
+<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><!--[if ENDBLOCK]><![endif]-->
 <?php /**PATH D:\DW\CODE\citas\vendor\wireui\wireui\src/Components/Wrapper/views/components/slots.blade.php ENDPATH**/ ?>

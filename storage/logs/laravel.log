@@ -1025,3 +1025,213 @@
 #25 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #26 {main}
 "} 
+[2025-09-02 18:03:33] local.ERROR: syntax error, unexpected token "function", expecting "(" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"function\", expecting \"(\" at D:\\DW\\CODE\\citas\\app\\Models\\Appointment.php:28)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:05:49] local.ERROR: syntax error, unexpected token ")", expecting "{" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \")\", expecting \"{\" at D:\\DW\\CODE\\citas\\app\\Models\\Appointment.php:31)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:05:56] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at D:\\DW\\CODE\\citas\\app\\Models\\Appointment.php:32)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:06:39] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at D:\\DW\\CODE\\citas\\app\\Models\\Appointment.php:33)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:06:43] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at D:\\DW\\CODE\\citas\\app\\Models\\Appointment.php:33)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:07:36] local.ERROR: syntax error, unexpected token "}", expecting ";" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\", expecting \";\" at D:\\DW\\CODE\\citas\\app\\Models\\Appointment.php:34)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:07:39] local.ERROR: syntax error, unexpected token "}", expecting ";" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\", expecting \";\" at D:\\DW\\CODE\\citas\\app\\Models\\Appointment.php:34)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:08:47] local.ERROR: syntax error, unexpected token "}", expecting ";" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\", expecting \";\" at D:\\DW\\CODE\\citas\\app\\Models\\Appointment.php:35)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:09:03] local.ERROR: syntax error, unexpected double-quoted string "", expecting variable or "{" or "$" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected double-quoted string \"\", expecting variable or \"{\" or \"$\" at D:\\DW\\CODE\\citas\\app\\Models\\Appointment.php:35)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:09:18] local.ERROR: syntax error, unexpected token ";", expecting identifier or variable or "{" or "$" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \";\", expecting identifier or variable or \"{\" or \"$\" at D:\\DW\\CODE\\citas\\app\\Models\\Appointment.php:35)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:24:47] local.ERROR: syntax error, unexpected token "]" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"]\" at D:\\DW\\CODE\\citas\\routes\\api.php:49)
+[stacktrace]
+#0 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(512): Illuminate\\Routing\\RouteFileRegistrar->register('D:\\\\DW\\\\CODE\\\\cita...')
+#1 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(466): Illuminate\\Routing\\Router->loadRoutes('D:\\\\DW\\\\CODE\\\\cita...')
+#2 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(206): Illuminate\\Routing\\Router->group(Array, 'D:\\\\DW\\\\CODE\\\\cita...')
+#3 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Configuration\\ApplicationBuilder.php(214): Illuminate\\Routing\\RouteRegistrar->group('D:\\\\DW\\\\CODE\\\\cita...')
+#4 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Configuration\\ApplicationBuilder->Illuminate\\Foundation\\Configuration\\{closure}()
+#5 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(84): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#8 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(754): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#9 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(162): Illuminate\\Container\\Container->call(Object(Closure))
+#10 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(59): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#11 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#12 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#13 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(84): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#14 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#15 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(754): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#16 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(143): Illuminate\\Container\\Container->call(Object(Closure))
+#17 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1153): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#18 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1131): Illuminate\\Foundation\\Application->bootProvider(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider))
+#19 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider), 'Illuminate\\\\Foun...')
+#20 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1130): array_walk(Array, Object(Closure))
+#21 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#22 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(341): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#23 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(473): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#24 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(195): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#25 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 {main}
+"} 
+[2025-09-02 18:25:08] local.ERROR: syntax error, unexpected token ":", expecting "]" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \":\", expecting \"]\" at D:\\DW\\CODE\\citas\\routes\\api.php:49)
+[stacktrace]
+#0 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(512): Illuminate\\Routing\\RouteFileRegistrar->register('D:\\\\DW\\\\CODE\\\\cita...')
+#1 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(466): Illuminate\\Routing\\Router->loadRoutes('D:\\\\DW\\\\CODE\\\\cita...')
+#2 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(206): Illuminate\\Routing\\Router->group(Array, 'D:\\\\DW\\\\CODE\\\\cita...')
+#3 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Configuration\\ApplicationBuilder.php(214): Illuminate\\Routing\\RouteRegistrar->group('D:\\\\DW\\\\CODE\\\\cita...')
+#4 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Configuration\\ApplicationBuilder->Illuminate\\Foundation\\Configuration\\{closure}()
+#5 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(84): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#8 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(754): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#9 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(162): Illuminate\\Container\\Container->call(Object(Closure))
+#10 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(59): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#11 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#12 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#13 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(84): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#14 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#15 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(754): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#16 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(143): Illuminate\\Container\\Container->call(Object(Closure))
+#17 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1153): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#18 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1131): Illuminate\\Foundation\\Application->bootProvider(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider))
+#19 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider), 'Illuminate\\\\Foun...')
+#20 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1130): array_walk(Array, Object(Closure))
+#21 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#22 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(341): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#23 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(473): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#24 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(195): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#25 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 {main}
+"} 
+[2025-09-02 18:25:15] local.ERROR: syntax error, unexpected identifier "doctor", expecting "]" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected identifier \"doctor\", expecting \"]\" at D:\\DW\\CODE\\citas\\routes\\api.php:50)
+[stacktrace]
+#0 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(512): Illuminate\\Routing\\RouteFileRegistrar->register('D:\\\\DW\\\\CODE\\\\cita...')
+#1 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(466): Illuminate\\Routing\\Router->loadRoutes('D:\\\\DW\\\\CODE\\\\cita...')
+#2 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(206): Illuminate\\Routing\\Router->group(Array, 'D:\\\\DW\\\\CODE\\\\cita...')
+#3 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Configuration\\ApplicationBuilder.php(214): Illuminate\\Routing\\RouteRegistrar->group('D:\\\\DW\\\\CODE\\\\cita...')
+#4 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Configuration\\ApplicationBuilder->Illuminate\\Foundation\\Configuration\\{closure}()
+#5 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(84): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#8 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(754): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#9 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(162): Illuminate\\Container\\Container->call(Object(Closure))
+#10 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(59): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#11 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#12 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#13 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(84): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#14 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#15 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(754): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#16 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(143): Illuminate\\Container\\Container->call(Object(Closure))
+#17 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1153): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#18 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1131): Illuminate\\Foundation\\Application->bootProvider(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider))
+#19 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider), 'Illuminate\\\\Foun...')
+#20 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1130): array_walk(Array, Object(Closure))
+#21 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#22 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(341): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#23 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(473): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#24 D:\\DW\\CODE\\citas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(195): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#25 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 {main}
+"} 
+[2025-09-02 18:25:39] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at D:\\DW\\CODE\\citas\\routes\\api.php:49)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:25:39] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at D:\\DW\\CODE\\citas\\routes\\api.php:49)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:25:51] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at D:\\DW\\CODE\\citas\\routes\\api.php:49)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:26:16] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at D:\\DW\\CODE\\citas\\routes\\api.php:49)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:26:31] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at D:\\DW\\CODE\\citas\\routes\\api.php:49)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:26:37] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at D:\\DW\\CODE\\citas\\routes\\api.php:49)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:26:39] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at D:\\DW\\CODE\\citas\\routes\\api.php:49)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:26:39] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at D:\\DW\\CODE\\citas\\routes\\api.php:49)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:26:49] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at D:\\DW\\CODE\\citas\\routes\\api.php:49)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:27:01] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at D:\\DW\\CODE\\citas\\routes\\api.php:49)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:27:39] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at D:\\DW\\CODE\\citas\\routes\\api.php:49)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:27:39] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at D:\\DW\\CODE\\citas\\routes\\api.php:49)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:28:39] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at D:\\DW\\CODE\\citas\\routes\\api.php:49)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:28:39] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at D:\\DW\\CODE\\citas\\routes\\api.php:49)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:28:39] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at D:\\DW\\CODE\\citas\\routes\\api.php:49)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:29:39] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at D:\\DW\\CODE\\citas\\routes\\api.php:49)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:29:39] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at D:\\DW\\CODE\\citas\\routes\\api.php:49)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:30:33] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at D:\\DW\\CODE\\citas\\routes\\api.php:49)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:30:39] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at D:\\DW\\CODE\\citas\\routes\\api.php:49)
+[stacktrace]
+#0 {main}
+"} 
+[2025-09-02 18:30:39] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at D:\\DW\\CODE\\citas\\routes\\api.php:49)
+[stacktrace]
+#0 {main}
+"} 

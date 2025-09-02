@@ -30,14 +30,14 @@ unset($__defined_vars); ?>
 <div x-data="{
     active: '<?php echo e($active); ?>',
 }">
-    <?php if(isset($header)): ?>    
+    <!--[if BLOCK]><![endif]--><?php if(isset($header)): ?>    
         <div class="border-b border-gray-200 dark:border-gray-700">
             <ul class="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500 dark:text-gray-400">
                 <?php echo e($header); ?>
 
             </ul>
         </div>
-    <?php endif; ?>
+    <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
     <div class="px-4 mt-4">
         <?php echo e($slot); ?>
 

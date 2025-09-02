@@ -15,7 +15,7 @@
         ])); ?>
 
 >
-    <?php if($label || $corner): ?>
+    <!--[if BLOCK]><![endif]--><?php if($label || $corner): ?>
         <div
             class="<?php echo \Illuminate\Support\Arr::toCssClasses([
                 'flex mb-1',
@@ -24,7 +24,7 @@
             ]); ?>"
             name="form.wrapper.header"
         >
-            <?php if($label): ?>
+            <!--[if BLOCK]><![endif]--><?php if($label): ?>
                 <?php if (isset($component)) { $__componentOriginal511d4862ff04963c3c16115c05a86a9d = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal511d4862ff04963c3c16115c05a86a9d = $attributes; } ?>
 <?php $component = Illuminate\View\DynamicComponent::resolve(['component' => WireUi::component('label')] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
@@ -47,9 +47,9 @@
 <?php $component = $__componentOriginal511d4862ff04963c3c16115c05a86a9d; ?>
 <?php unset($__componentOriginal511d4862ff04963c3c16115c05a86a9d); ?>
 <?php endif; ?>
-            <?php endif; ?>
+            <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
 
-            <?php if($corner): ?>
+            <!--[if BLOCK]><![endif]--><?php if($corner): ?>
                 <?php if (isset($component)) { $__componentOriginal511d4862ff04963c3c16115c05a86a9d = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal511d4862ff04963c3c16115c05a86a9d = $attributes; } ?>
 <?php $component = Illuminate\View\DynamicComponent::resolve(['component' => WireUi::component('label')] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
@@ -72,9 +72,9 @@
 <?php $component = $__componentOriginal511d4862ff04963c3c16115c05a86a9d; ?>
 <?php unset($__componentOriginal511d4862ff04963c3c16115c05a86a9d); ?>
 <?php endif; ?>
-            <?php endif; ?>
+            <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
         </div>
-    <?php endif; ?>
+    <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
 
     <label
         <?php echo e($attributes
@@ -105,7 +105,7 @@
 
         name="form.wrapper.container"
     >
-        <?php if(!isset($prepend) && ($prefix || $icon)): ?>
+        <!--[if BLOCK]><![endif]--><?php if(!isset($prepend) && ($prefix || $icon)): ?>
             <div
                 name="form.wrapper.container.prefix"
                 <?php echo e(WireUi::extractAttributes($prefix)->class([
@@ -116,7 +116,7 @@
                 ])); ?>
 
             >
-                <?php if($icon): ?>
+                <!--[if BLOCK]><![endif]--><?php if($icon): ?>
                     <?php if (isset($component)) { $__componentOriginal511d4862ff04963c3c16115c05a86a9d = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal511d4862ff04963c3c16115c05a86a9d = $attributes; } ?>
 <?php $component = Illuminate\View\DynamicComponent::resolve(['component' => WireUi::component('icon')] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
@@ -140,7 +140,7 @@
                 <?php elseif($prefix): ?>
                     <?php echo e($prefix); ?>
 
-                <?php endif; ?>
+                <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
             </div>
         <?php elseif(isset($prepend)): ?>
             <div name="form.wrapper.container.prepend"
@@ -153,12 +153,12 @@
                 <?php echo e($prepend); ?>
 
             </div>
-        <?php endif; ?>
+        <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
 
         <?php echo e($slot); ?>
 
 
-        <?php if(!isset($append) && ($rightIcon || $suffix || $withErrorIcon)): ?>
+        <!--[if BLOCK]><![endif]--><?php if(!isset($append) && ($rightIcon || $suffix || $withErrorIcon)): ?>
             <div
                 name="form.wrapper.container.suffix"
                 <?php echo e(WireUi::extractAttributes($suffix)->class([
@@ -169,7 +169,7 @@
                 ])); ?>
 
             >
-                <?php if($rightIcon): ?>
+                <!--[if BLOCK]><![endif]--><?php if($rightIcon): ?>
                     <?php if (isset($component)) { $__componentOriginal511d4862ff04963c3c16115c05a86a9d = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal511d4862ff04963c3c16115c05a86a9d = $attributes; } ?>
 <?php $component = Illuminate\View\DynamicComponent::resolve(['component' => WireUi::component('icon')] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
@@ -214,7 +214,7 @@
 <?php $component = $__componentOriginal511d4862ff04963c3c16115c05a86a9d; ?>
 <?php unset($__componentOriginal511d4862ff04963c3c16115c05a86a9d); ?>
 <?php endif; ?>
-                <?php endif; ?>
+                <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
             </div>
         <?php elseif(isset($append)): ?>
             <div
@@ -228,10 +228,10 @@
                 <?php echo e($append); ?>
 
             </div>
-        <?php endif; ?>
+        <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
     </label>
 
-    <?php if($description && !$invalidated): ?>
+    <!--[if BLOCK]><![endif]--><?php if($description && !$invalidated): ?>
         <?php if (isset($component)) { $__componentOriginal511d4862ff04963c3c16115c05a86a9d = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal511d4862ff04963c3c16115c05a86a9d = $attributes; } ?>
 <?php $component = Illuminate\View\DynamicComponent::resolve(['component' => WireUi::component('description')] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
@@ -277,13 +277,13 @@
 <?php $component = $__componentOriginal511d4862ff04963c3c16115c05a86a9d; ?>
 <?php unset($__componentOriginal511d4862ff04963c3c16115c05a86a9d); ?>
 <?php endif; ?>
-    <?php endif; ?>
+    <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
 
-    <?php if(isset($after)): ?>
+    <!--[if BLOCK]><![endif]--><?php if(isset($after)): ?>
         <div <?php echo e($after->attributes); ?>>
             <?php echo e($after); ?>
 
         </div>
-    <?php endif; ?>
+    <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
 </div>
 <?php /**PATH D:\DW\CODE\citas\vendor\wireui\wireui\src/Components/Wrapper/views/text-field.blade.php ENDPATH**/ ?>

@@ -16,6 +16,13 @@
         'name' => 'Calendario'
     ],
 ])]); ?>
+    <?php $__env->startPush('css'); ?>
+        <style>
+            .fc-event{
+                cursor: pointer;
+            }
+        </style>
+    <?php $__env->stopPush(); ?>
     <?php if (isset($component)) { $__componentOriginal983a7eb9047f01311cddd82e78ab7d46 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal983a7eb9047f01311cddd82e78ab7d46 = $attributes; } ?>
 <?php $component = WireUi\Components\Card\Index::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
@@ -27,6 +34,67 @@
 <?php endif; ?>
 <?php $component->withAttributes(['class' => 'bg-white border-4 border-blue-300 rounded-xl']); ?>
         <div x-data="data()">
+            <?php if (isset($component)) { $__componentOriginal6a7d148983ed3ace55a3e668006b80a5 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal6a7d148983ed3ace55a3e668006b80a5 = $attributes; } ?>
+<?php $component = WireUi\Components\Modal\Card::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('wire-modal-card'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\WireUi\Components\Modal\Card::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['title' => 'Cita Médica','name' => 'appointmentModal','width' => 'sm','align' => 'center']); ?>
+                <div class="space-y-4 mb-4">
+                    <div>
+                        <strong>Fecha y Hora: </strong>
+                        <span x-text="selectedEvent.dateTime"></span>
+                    </div>
+                    <div>
+                        <strong>Paciente:</strong>
+                        <span x-text="selectedEvent.patient"></span>
+                    </div>
+                    <div>
+                        <strong>Médico: </strong>
+                        <span x-text="selectedEvent.doctor"></span>
+                    </div>
+                    <div>
+                        <strong>Estado: </strong>
+                        <span x-text="selectedEvent.status"></span>
+                    </div>
+                </div>
+                <a x-bind:href="selectedEvent.url" class="w-full">
+                    <?php if (isset($component)) { $__componentOriginalf04362c37f55b087f96f1c4fb07d5ce1 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalf04362c37f55b087f96f1c4fb07d5ce1 = $attributes; } ?>
+<?php $component = WireUi\Components\Button\Base::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('wire-button'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\WireUi\Components\Button\Base::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['sky' => true,'class' => 'w-full']); ?>
+                        Gestionar Cita
+                     <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginalf04362c37f55b087f96f1c4fb07d5ce1)): ?>
+<?php $attributes = $__attributesOriginalf04362c37f55b087f96f1c4fb07d5ce1; ?>
+<?php unset($__attributesOriginalf04362c37f55b087f96f1c4fb07d5ce1); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalf04362c37f55b087f96f1c4fb07d5ce1)): ?>
+<?php $component = $__componentOriginalf04362c37f55b087f96f1c4fb07d5ce1; ?>
+<?php unset($__componentOriginalf04362c37f55b087f96f1c4fb07d5ce1); ?>
+<?php endif; ?>
+                </a>
+             <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal6a7d148983ed3ace55a3e668006b80a5)): ?>
+<?php $attributes = $__attributesOriginal6a7d148983ed3ace55a3e668006b80a5; ?>
+<?php unset($__attributesOriginal6a7d148983ed3ace55a3e668006b80a5); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal6a7d148983ed3ace55a3e668006b80a5)): ?>
+<?php $component = $__componentOriginal6a7d148983ed3ace55a3e668006b80a5; ?>
+<?php unset($__componentOriginal6a7d148983ed3ace55a3e668006b80a5); ?>
+<?php endif; ?>
             <div x-ref='calendar'></div>
         </div>
      <?php echo $__env->renderComponent(); ?>
@@ -44,6 +112,25 @@
         <script>
             function data(){
                 return {
+                    selectedEvent:{
+                        dateTime: null,
+                        patient:null,
+                        doctor: null,
+                        status: null,
+                        color: null,
+                        url: null,
+                    },
+                    openModal(info){
+                        this.selectedEvent = {
+                            dateTime: info.event.extendedProps.dateTime,
+                            patient: info.event.extendedProps.patient,
+                            doctor: info.event.extendedProps.doctor,
+                            status: info.event.extendedProps.status,
+                            color: info.event.extendedProps.color,
+                            url: info.event.extendedProps.url,
+                        };
+                        $openModal('appointmentModal');
+                    },
                     init(){
                         let calendarEl = this.$refs.calendar;
                         let calendar = new FullCalendar.Calendar(calendarEl, {
@@ -75,6 +162,7 @@
                                     alert('Hubo un error al cargar los eventos');
                                 }
                             },
+                            eventClick: (info) => this.openModal(info),
                             scrollTime: "<?php echo e(date('H:i:s')); ?>",
                         });
                         calendar.render();

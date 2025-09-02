@@ -3,7 +3,7 @@
     data_get($colorClasses, 'root', ''),
     $shadowClasses => !$shadowless,
 ])); ?>>
-    <?php if(isset($header)): ?>
+    <!--[if BLOCK]><![endif]--><?php if(isset($header)): ?>
         <div <?php echo e($header->attributes); ?>>
             <?php echo e($header); ?>
 
@@ -23,14 +23,14 @@
 
             </div>
 
-            <?php if(isset($action)): ?>
+            <!--[if BLOCK]><![endif]--><?php if(isset($action)): ?>
                 <div <?php echo e($action->attributes); ?>>
                     <?php echo e($action); ?>
 
                 </div>
-            <?php endif; ?>
+            <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
         </div>
-    <?php endif; ?>
+    <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
 
     <div <?php echo e(WireUi::extractAttributes($slot)->class([
         data_get($colorClasses, 'text', ''),
@@ -41,7 +41,7 @@
 
     </div>
 
-    <?php if(isset($footer)): ?>
+    <!--[if BLOCK]><![endif]--><?php if(isset($footer)): ?>
         <div <?php echo e($footer->attributes->class([
             data_get($colorClasses, 'border', '') => !$borderless,
             data_get($roundedClasses, 'footer', ''),
@@ -52,6 +52,6 @@
             <?php echo e($footer); ?>
 
         </div>
-    <?php endif; ?>
+    <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
 </div>
 <?php /**PATH D:\DW\CODE\citas\vendor\wireui\wireui\src/Components/Card/views/index.blade.php ENDPATH**/ ?>
